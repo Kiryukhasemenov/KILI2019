@@ -1,0 +1,7 @@
+7. "Compare BatchNorm and LayerNorm. What  is the difference and when do we use them?"
+
+The difference between these normalizations is how to compute the mean and variance. 
+In BatchNorm, we take all the elements of the minibatch, and normalize over each element (i.e. all features) of them.
+In LayerNorm, we take the same feature (layer), and normalize the values within it.
+
+BatchNorm is an efficient instrument for the majority of the network types, LayerNorm is preferrably used in RNNs
